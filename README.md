@@ -1,21 +1,41 @@
 ## Russian Authors on the Internet
 
-Data and scripts for the PhD thesis "Web texten. Text leben. Leben Weben. (Auto-)Biographische Praktiken im literarischen Runet" by Gernot Howanitz, University of Passau 2017. Uses Python 2.7 and Jupyter notebooks for visualisation.
+Data and scripts for the following monograph:
+
+Howanitz, Gernot. 2020. *Leben Weben. (Auto-)Biographische Praktiken russischer Autorinnen und Autoren im Internet*. Bielefeld: transcript. (= PhD thesis, U of Passau 2017). [Available in Open Access](https://www.transcript-verlag.de/media/pdf/43/90/40/oa9783839451328.pdf)
+
+Uses Python 3.9 and Jupyter notebooks for visualisation.
 
 ## Installation
 
-1. Download and install Anaconda, a Python release for data scientists, make sure you got the Python 2.7 version (not Python 3.6!): https://www.continuum.io/downloads 
+0. Check out this repository
 
-2. Install additional Python packages using conda:
-  a. Start the program "Anaconda prompt"
-  b. Enter the following line and press "Enter": conda install qgrid gensim
-  c. Enter the following line and press "Enter": jupyter nbextension enable --py widgetsnbextension
-  d. If any of this fails, you might need to run the Anaconda prompt as administrator
+```
+git init
+git clone https://github.com/ghowa/russian-blogs.git
+```
+
+1. Install required python packages
+
+```
+pip install -r requirements.txt
+```
+
+2. Activate qgrid:
+
+```
+jupyter nbextension enable --py --sys-prefix qgrid
+
+# only required if you have not enabled the ipywidgets nbextension yet
+jupyter nbextension enable --py --sys-prefix widgetsnbextension
+```
 
 ## Usage
 
-After the setup procedure, copy all data from the DVD to your home folder. Open "Anaconda prompt", enter the following line and press "Enter:
+Start Jupyter notebook: 
 
-jupyter notebook --NotebookApp.iopub_data_rate_limit=1e10
+```
+jupyter notebook
+```
 
-A browser window will open. Browse to the folder with the copied DVD content and click on "corpus.ipynb" for browsing the corpus or "create_lda.ipynb" for creating a new topic model of the corpus.
+A browser window will open. Select "corpus.ipynb" for browsing the corpus or "create_lda.ipynb" for creating a new topic model of the corpus.
