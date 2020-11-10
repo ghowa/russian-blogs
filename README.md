@@ -14,20 +14,29 @@ Uses Python 3.9 and Jupyter notebooks for visualisation.
 git init
 git clone https://github.com/ghowa/russian-blogs.git
 ```
+# Variant 1: Pip
 
-1. Install required python packages
+1.1 Install required python packages
 
 ```
 pip install -r requirements.txt
 ```
 
-2. Activate qgrid:
+1.2 Activate qgrid:
 
 ```
 jupyter nbextension enable --py --sys-prefix qgrid
 
 # only required if you have not enabled the ipywidgets nbextension yet
 jupyter nbextension enable --py --sys-prefix widgetsnbextension
+```
+
+# Variant 2: Anaconda
+
+2.1 Install required python packages
+
+```
+conda env create -f environment.yml
 ```
 
 ## Usage
