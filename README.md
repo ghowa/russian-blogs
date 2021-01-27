@@ -6,7 +6,7 @@ Howanitz, Gernot. 2020. *Leben Weben. (Auto-)Biographische Praktiken russischer 
 
 Uses Python 3.9 and Jupyter notebooks for visualisation.
 
-**Note: This repository is not updated anymore. Active development happens over [here](https://github.com/ghowa/generic-topic-modeling)
+**Note: This repository is not updated anymore. Active development happens over [here](https://github.com/ghowa/generic-topic-modeling)**
 
 ## Installation
 
